@@ -1,0 +1,15 @@
+$ node createWallet.ts
+{
+  xpub: 'tpubD6NzVbkrYhZ4YP1RavEcfZZLaXpJunMAh28SjMuidqJduTJgZryJp116zGeh1FhRxo4ERrLaKH4dwcrRfPQDtHoQ6ruePukjFUYCg3KXXX8',
+  privatekey: '1edff3c742110b1dba9859c9ec9a5fdb202bd63157cec703a179e1a699bb96c5',
+  address: 'ms3pw6XTD4FLq3K6GQ9cQmHofEPnCQd8Qr',
+  nmenonic: 'fringe notice impose firm sort joke ill service impulse pizza staff ride'
+}
+
+nully0x@nully0x MINGW64 ~/projects/blockchain/bitcoindemo/src/utils (main)
+$ node createWallet.ts
+{
+  xpub: 'tpubD6NzVbkrYhZ4XCJg3UJB5LQa4cAk44BpVm3BgP5dS8yoaJuh8hKWvddpaDTfsuxAU7MK7uWocpUReGVWxcfoVRFR6t3fVPJBigYPCHPfXUF',
+  privatekey: '092626816a7696b45d8ea6163a03bb744903894a6fc253ef8983aba6e216cfe3',
+  address: 'mrxGiK2UKTp25ecmvRCJobG9TkqAVzT28j',
+  nmenonic: 'focus betray share around lyrics early attack milk budget cause inflict calm'
