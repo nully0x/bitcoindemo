@@ -2,7 +2,7 @@ const axiosBalance = require("axios");
 const bitcoreBalance = require("bitcore-lib");
 
 //check balance function
-const checkBalance = async (address)=> {
+const confirmedBalance = async (address)=> {
   try {
     const sochain_network = "BTCTEST";
     address = address.toString();
@@ -28,6 +28,5 @@ const unconfirmedBalance = async (address)=> {
     }
 };
 
-
-console.log(checkBalance("ms3pw6XTD4FLq3K6GQ9cQmHofEPnCQd8Qr"));
-console.log(unconfirmedBalance("ms3pw6XTD4FLq3K6GQ9cQmHofEPnCQd8Qr"));
+console.log(confirmedBalance("ms3pw6XTD4FLq3K6GQ9cQmHofEPnCQd8Qr"));
+console.log(unconfirmedBalance("mrxGiK2UKTp25ecmvRCJobG9TkqAVzT28j"));
