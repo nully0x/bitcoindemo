@@ -9,11 +9,11 @@ var ECPair = (0, ecpair_1["default"])(ecc);
 var bip32 = (0, bip32_1["default"])(ecc);
 //create a new wallet to store the private key, address, mnemonic, password, wif and support for bech32 using network mainnet
 var createWallet = function () {
-    var network = bitcoin.networks.testnet;
+    var network = bitcoin.networks.mainnet;
     var mnemonic = bip39.generateMnemonic();
     var seed = bip39.mnemonicToSeedSync(mnemonic);
     var root = bip32.fromSeed(seed, network);
-    var child = root.derivePath("m/44'/0'/0'/0/0");
+    var child = root.derivePath("m/84'/0'/0'/0/0");
     var keyPair = ECPair.fromPrivateKey(child.privateKey);
     var address = bitcoin.payments.p2wpkh({ pubkey: keyPair.publicKey, network: network }).address;
     var wif = keyPair.toWIF();
